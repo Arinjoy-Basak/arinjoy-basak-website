@@ -93,6 +93,15 @@
 
 
 
+
+
+
+
+
+
+
+
+
 <!--********************
 THE REST OF THE SHIT
 ********************-->
@@ -177,6 +186,28 @@ THE REST OF THE SHIT
                         </div><!--//content-->
                     </div><!--//section-inner-->                 
                 </section><!--//section-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -348,22 +379,97 @@ THE REST OF THE SHIT
 
 
 
+
+
+
+
+
+
+
                 <section class="github section">
                     <div class="section-inner">
                         <h2 class="heading">My GitHub</h2>
-                        <p>You can embed your GitHub contribution graph calendar using IonicaBizau's <a href="https://github.com/IonicaBizau/github-calendar" target="_blank">GitHub Calendar</a> widget. 
+                        <p>You can embed your GitHub contribution graph calendar using IonicaBizau's 
+                        <a href="https://github.com/IonicaBizau/github-calendar" target="_blank">GitHub Calendar</a> widget. 
                         
-                        <div id="github-graph" class="github-graph">
+                        <!-- <div id="github-graph" class="github-graph">
 
-                        </div><!--//github-graph-->
+                        </div><!--//github-graph->
 
                         <p>You can also embed your GitHub activities using Casey Scarborough's <a href="http://caseyscarborough.com/projects/github-activity/" target="_blank">GitHub Activity Stream</a> widget.        
-                        <!--//Usage: http://caseyscarborough.com/projects/github-activity/ -->                       
+                        //Usage: http://caseyscarborough.com/projects/github-activity/ ->                       
                         <div id="ghfeed" class="ghfeed">
                         </div><!--//ghfeed-->
                         
                     </div><!--//secton-inner-->
                 </section><!--//section-->
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					 <a name="education"></a>
+					 <section class="education aside section">                
+                <aside class="education aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Education</h2>
+                        <div class="content">
+                            <div class="item">                      
+                                <h3 class="title"><i class="fa fa-graduation-cap"></i> Bachelor of Engineering, Computer Science and Technology</h3>
+                                <h4 class="university">IIEST, Shibpur (formerly BESU, Shibpur)
+                                <span class="year">(August, 2012-May, 2016)</span></h4>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><i class="fa fa-graduation-cap"></i> Primary and Secondary School</h3>
+                                <h4 class="university">St. Xaviers's Collegiate School, Kolkata <span class="year">(2000-2012)</span></h4>
+                            </div><!--//item-->
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </section><!--//section-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             </div><!--//primary-->
 
 
@@ -408,7 +514,7 @@ THE REST OF THE SHIT
                             <ul class="list-unstyled">
                                 <li><i class="fa fa-map-marker"></i><span class="sr-only">Location:</span>Blacksburg, Virginia, US</li>
                                 <!-- add link for home town>-->
-                                <li><i class="fa fa-envelope-o"></i><span class="sr-only">Email:</span><a href="#">basakarinjoy@gmail.com</a></li>
+                                <li><i class="fa fa-envelope-o"></i><span class="sr-only">Email:</span><a href="basakarinjoy@gmail.com">basakarinjoy@gmail.com</a></li>
                                 
                                 <!-- website link
                                 <li><i class="fa fa-link"></i><span class="sr-only">Website:</span><a href="#">http://www.website.com</a></li>
@@ -520,7 +626,7 @@ THE REST OF THE SHIT
                     </div><!--//section-inner->
                 </aside><!--//section-->
                 
-                <a name="education"></a>
+             <!--   <a name="education"></a>
                 <aside class="education aside section">
                     <div class="section-inner">
                         <h2 class="heading">Education</h2>
@@ -529,13 +635,13 @@ THE REST OF THE SHIT
                                 <h3 class="title"><i class="fa fa-graduation-cap"></i> Bachelor of Engineering, Computer Science and Technology</h3>
                                 <h4 class="university">IIEST, Shibpur (formerly BESU, Shibpur)
                                 <span class="year">(August, 2012-May, 2016)</span></h4>
-                            </div><!--//item-->
+                            </div><!--//item->
                             <div class="item">
                                 <h3 class="title"><i class="fa fa-graduation-cap"></i> Primary and Secondary School</h3>
                                 <h4 class="university">St. Xaviers's Collegiate School, Kolkata <span class="year">(2000-2012)</span></h4>
-                            </div><!--//item-->
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
+                            </div><!--//item->
+                        </div><!--//content->
+                    </div><!--//section-inner->
                 </aside><!--//section-->
                             
                 <!--<aside class="languages aside section">
@@ -647,7 +753,15 @@ THE REST OF THE SHIT
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
     <script type="text/javascript" src="assets/plugins/github-activity/src/github-activity.js"></script>
     <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>            
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript">//Hamburger menu toggle
+  $(".navbar-nav li a").click(function (event) {
+    // check if window is small enough so dropdown is created
+    var toggle = $(".navbar-toggle").is(":visible");
+    if (toggle) {
+      $(".navbar-collapse").collapse('hide');
+    }
+  });</script>            
 </body>
 </html> 
 
