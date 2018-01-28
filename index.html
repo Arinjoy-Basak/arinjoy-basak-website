@@ -1515,6 +1515,49 @@ $(window).scroll(function() {
 		$('a.back-to-top').fadeOut('slow');
 	}
 });</script>
+
+<script>
+// Make Spotify the right size and responsive
+$(document).ready(function() {
+
+	/* Make Spotify fit initial layout */
+	respondify();
+
+});
+
+
+$(window).resize(function() {
+
+	/* Make Spotify fit layout on resize */
+	respondify();
+
+});
+
+//Credits: https://gist.github.com/mennolui/
+function respondify() {
+
+	// Make the Spotify playlist embed fit the layout.
+	// Spotify wants the height of the embed to be the width + 80px,
+	// When the embed is narrower than 210px, Spotify wants the height to be 80px (art work and title only).
+
+	$('body').find('iframe[src*="embed.spotify.com/?uri="]').each(function() {
+		var w = $(this).parent(1).width();
+		//var h_offset = 80;
+
+		$(this).css('width', w + 'px');
+
+		if (w < 210) {
+			$(this).css('height', h_offset + 'px');			
+		}
+		else {
+			$(this).css('height', (w + 80) + 'px');
+		}
+
+		$(this).attr('src',$(this).attr('src'));
+	});
+
+}
+</script>
 </body>
 </html> 
 
